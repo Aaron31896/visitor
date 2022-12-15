@@ -1,0 +1,172 @@
+package com.clss.visitor.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.clss.visitor.entity.RoleMaster;
+import com.clss.visitor.entity.UserMaster;
+import com.clss.visitor.entity.UserRoleAssingment;
+import com.clss.visitor.entity.UserRoleAssingmentPK;
+import com.clss.visitor.payoad.request.RoleMasterRequest;
+import com.clss.visitor.payoad.request.UserMasterRequest;
+import com.clss.visitor.payoad.request.UserRoleAssingmentRequest;
+import com.clss.visitor.repository.RoleMasterRepository;
+import com.clss.visitor.repository.UserMasterRepository;
+import com.clss.visitor.repository.UserRoleAssingmentRepository;
+
+@RestController
+public class VisitorController {
+
+	@Autowired
+	private UserMasterRepository userRepo;
+	
+	@Autowired
+	private RoleMasterRepository roleRepo;
+
+	@Autowired
+	private UserRoleAssingmentRepository assingmentRepo;
+
+	@PostMapping("/saveUserMaster")
+	public ResponseEntity<?> saveUserMaster(@RequestBody UserMasterRequest saveReq) {
+		try {
+			UserMaster user = new UserMaster();
+			user.setUserName(saveReq.getUserName());
+			user.setEmailId(saveReq.getEmailId());
+			user.setMobile(saveReq.getMobile());
+			user.setPassword(saveReq.getPassword());
+			user.setStatus("A");
+			userRepo.save(user);
+			return new ResponseEntity<>("Saved Successfully", HttpStatus.OK);
+
+		} catch (Exception exception) {
+			return new ResponseEntity<>(null, HttpStatus.BAD_REQUEST);
+		}
+	}
+
+	@PostMapping("/updateUserMaster")
+	public ResponseEntity<?> updateUserMaster(@RequestBody UserMasterRequest saveReq) {
+		try {
+			UserMaster user = new UserMaster();
+			user.setId(saveReq.getId());
+			user.setUserName(saveReq.getUserName());
+			user.setEmailId(saveReq.getEmailId());
+			user.setMobile(saveReq.getMobile());
+			user.setPassword(saveReq.getPassword());
+			user.setStatus(saveReq.getStatus());
+			userRepo.save(user);
+			return new ResponseEntity<>("Updated Successfully", HttpStatus.OK);
+
+		} catch (Exception exception) {
+			return new ResponseEntity<>(null, HttpStatus.BAD_REQUEST);
+		}
+	}
+
+	@GetMapping("/getAllUser")
+	public ResponseEntity<?> getAllUser() {
+		List<UserMasterRequest> list = new ArrayList<>();
+		try {
+			List<UserMaster> userList = userRepo.findAll();
+			for (UserMaster saveReq : userList) {
+				UserMasterRequest user = new UserMasterRequest();
+				user.setId(saveReq.getId());
+				user.setUserName(saveReq.getUserName());
+				user.setEmailId(saveReq.getEmailId());
+				user.setMobile(saveReq.getMobile());
+				user.setPassword(saveReq.getPassword());
+				user.setStatus(saveReq.getStatus());
+				list.add(user);
+			}
+			return new ResponseEntity<List<UserMasterRequest>>(list, HttpStatus.OK);
+
+		} catch (Exception exception) {
+			return new ResponseEntity<>(null, HttpStatus.BAD_REQUEST);
+		}
+	}
+	
+	@PostMapping("/saveRoleMaster")
+	public ResponseEntity<?> saveRoleMaster(@RequestBody RoleMasterRequest saveReq) {
+		try {
+			RoleMaster user = new RoleMaster();
+			user.setRoleName(saveReq.getRoleName());
+			user.setStatus(saveReq.getStatus());
+			roleRepo.save(user);
+			return new ResponseEntity<>("Saved Successfully", HttpStatus.OK);
+
+		} catch (Exception exception) {
+			return new ResponseEntity<>(null, HttpStatus.BAD_REQUEST);
+		}
+	}
+	@PostMapping("/updateRoleMaster")
+	public ResponseEntity<?> updateRoleMaster(@RequestBody RoleMasterRequest saveReq) {
+		try {
+			RoleMaster user = new RoleMaster();
+			user.setId(saveReq.getRoleId());
+			user.setRoleName(saveReq.getRoleName());
+			user.setStatus(saveReq.getStatus());
+			roleRepo.save(user);
+			return new ResponseEntity<>("Updated Successfully", HttpStatus.OK);
+
+		} catch (Exception exception) {
+			return new ResponseEntity<>(null, HttpStatus.BAD_REQUEST);
+		}
+	}
+	@GetMapping("/getAllRole")
+	public ResponseEntity<?> getAllRole() {
+		List<RoleMasterRequest> list = new ArrayList<>();
+		try {
+			List<RoleMaster> roleList = roleRepo.findAll();
+			for (RoleMaster saveReq : roleList) {
+				RoleMasterRequest user = new RoleMasterRequest();
+				user.setRoleId(saveReq.getId());
+				user.setRoleName(saveReq.getRoleName());
+				user.setStatus(saveReq.getStatus());
+				list.add(user);
+			}
+			return new ResponseEntity<List<RoleMasterRequest>>(list, HttpStatus.OK);
+
+		} catch (Exception exception) {
+			return new ResponseEntity<>(null, HttpStatus.BAD_REQUEST);
+		}
+	}
+	@PostMapping("/saveUserRoleAssingment")
+	public ResponseEntity<?> saveUserRoleAssingment(@RequestBody UserRoleAssingmentRequest saveReq) {
+		try {
+			UserRoleAssingment user = new UserRoleAssingment();
+			UserRoleAssingmentPK pk = new UserRoleAssingmentPK();
+			pk.setUserId(saveReq.getUserId());
+			pk.setRoleId(saveReq.getRoleId());
+			user.setId(pk);
+		    assingmentRepo.save(user);
+			return new ResponseEntity<>("Saved Successfully", HttpStatus.OK);
+
+		} catch (Exception exception) {
+			return new ResponseEntity<>(null, HttpStatus.BAD_REQUEST);
+		}
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+query//////////
+select  r.* from role_master as r inner join  user_role_assingment as u
+on u.ROLE_ID=r.ROLL_ID
+where u.USER_ID=1;
