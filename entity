@@ -1,0 +1,229 @@
+                                                             //rolemaster
+package com.clss.visitor.entity;
+import java.io.Serializable;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+
+@Table(name = "role_master")
+
+public class RoleMaster implements Serializable{
+	@Id
+	@Column(name = "ROLE_ID")
+	private int id;
+	
+	@Column(name = "ROLE_NAME")
+	private String roleName;
+
+
+	@Column(name = "STATUS")
+	private String status;
+
+
+	public int getId() {
+		return id;
+	}
+
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+
+	public String getRoleName() {
+		return roleName;
+	}
+
+
+	public void setRoleName(String roleName) {
+		this.roleName = roleName;
+	}
+
+
+	public String getStatus() {
+		return status;
+	}
+
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+
+	
+
+}
+                                                      //user master
+                                                      package com.clss.visitor.entity;
+
+import java.io.Serializable;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "user_master")
+public class UserMaster implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	@Id
+	@Column(name = "ID")
+	private int id;
+	
+	@Column(name = "USER_NAME")
+	private String userName;
+	
+	@Column(name = "PASSWORD")
+	private String password;
+	
+	@Column(name = "EMAIL_ID")
+	private String emailId;
+	
+	@Column(name = "MOBILE")
+	private String mobile;
+	
+	@Column(name = "STATUS")
+	private String status;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getUserName() {
+		return userName;
+	}
+
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public String getEmailId() {
+		return emailId;
+	}
+
+	public void setEmailId(String emailId) {
+		this.emailId = emailId;
+	}
+
+	public String getMobile() {
+		return mobile;
+	}
+
+	public void setMobile(String mobile) {
+		this.mobile = mobile;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+}
+                                                         //userroleapplication
+ package com.clss.visitor.entity;
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "user_role_assingment")
+public class UserRoleAssingment implements Serializable{
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	@Id
+	private UserRoleAssingmentPK id;
+	public UserRoleAssingmentPK getId() {
+		return id;
+	}
+	public void setId(UserRoleAssingmentPK id) {
+		this.id = id;
+	}
+	
+	
+}
+                          //userroleassingmentpk
+  package com.clss.visitor.entity;
+
+import java.io.Serializable;
+import java.util.Objects;
+
+import javax.persistence.Column;
+import javax.persistence.Embeddable;
+
+@Embeddable
+public class UserRoleAssingmentPK implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	@Column(name = "USER_ID")
+	private int userId;
+	
+	@Column(name = "ROLE_ID")
+	private int roleId;
+
+	public int getUserId() {
+		return userId;
+	}
+
+	public void setUserId(int userId) {
+		this.userId = userId;
+	}
+
+	public int getRoleId() {
+		return roleId;
+	}
+
+	public void setRoleId(int roleId) {
+		this.roleId = roleId;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(roleId, userId);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		UserRoleAssingmentPK other = (UserRoleAssingmentPK) obj;
+		return roleId == other.roleId && userId == other.userId;
+	}
+
+}
