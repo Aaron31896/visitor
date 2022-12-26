@@ -1,0 +1,178 @@
+Dec 26, 2022 5:55:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version name:   Apache Tomcat/9.0.67
+Dec 26, 2022 5:55:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Sep 23 2022 11:22:29 UTC
+Dec 26, 2022 5:55:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version number: 9.0.67.0
+Dec 26, 2022 5:55:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Windows 10
+Dec 26, 2022 5:55:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            10.0
+Dec 26, 2022 5:55:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Dec 26, 2022 5:55:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             C:\Users\CLSS-IT-PC072\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.5.v20221102-0933\jre
+Dec 26, 2022 5:55:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           17.0.5+8
+Dec 26, 2022 5:55:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Eclipse Adoptium
+Dec 26, 2022 5:55:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         D:\ws\.metadata\.plugins\org.eclipse.wst.server.core\tmp0
+Dec 26, 2022 5:55:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         D:\apache-tomcat-9.0.67
+Dec 26, 2022 5:55:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -XX:+ShowCodeDetailsInExceptionMessages
+Dec 26, 2022 5:55:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:53058
+Dec 26, 2022 5:55:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -javaagent:C:\Users\CLSS-IT-PC072\eclipse\jee-2022-06\eclipse\configuration\org.eclipse.osgi\407\0\.cp\lib\javaagent-shaded.jar
+Dec 26, 2022 5:55:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=D:\ws\.metadata\.plugins\org.eclipse.wst.server.core\tmp0
+Dec 26, 2022 5:55:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=D:\apache-tomcat-9.0.67
+Dec 26, 2022 5:55:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dwtp.deploy=D:\ws\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps
+Dec 26, 2022 5:55:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+Dec 26, 2022 5:55:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+Dec 26, 2022 5:55:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+Dec 26, 2022 5:55:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+Dec 26, 2022 5:55:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+Dec 26, 2022 5:55:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dfile.encoding=UTF-8
+Dec 26, 2022 5:55:22 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+Dec 26, 2022 5:55:22 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+Dec 26, 2022 5:55:22 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+Dec 26, 2022 5:55:22 PM org.apache.catalina.core.AprLifecycleListener initializeSSL
+INFO: OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+Dec 26, 2022 5:55:22 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-nio-8080"]
+Dec 26, 2022 5:55:22 PM org.apache.catalina.startup.Catalina load
+INFO: Server initialization in [457] milliseconds
+Dec 26, 2022 5:55:22 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service [Catalina]
+Dec 26, 2022 5:55:22 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet engine: [Apache Tomcat/9.0.67]
+Dec 26, 2022 5:55:27 PM org.apache.jasper.servlet.TldScanner scanJars
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Dec 26, 2022 5:55:27 PM org.apache.catalina.core.ApplicationContext log
+INFO: 2 Spring WebApplicationInitializers detected on classpath
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.2.RELEASE)
+
+2022-12-26 17:55:28.573  INFO 8288 --- [           main] com.clss.visitor.ServletInitializer      : Starting ServletInitializer v0.0.1-SNAPSHOT on CLSS-IT-PC072 with PID 8288 (D:\ws\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\visitor\WEB-INF\classes started by CLSS-IT-PC072 in C:\Users\CLSS-IT-PC072\Desktop)
+2022-12-26 17:55:28.581  INFO 8288 --- [           main] com.clss.visitor.ServletInitializer      : No active profile set, falling back to default profiles: default
+2022-12-26 17:55:30.375  INFO 8288 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-12-26 17:55:30.494  INFO 8288 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 106ms. Found 5 repository interfaces.
+2022-12-26 17:55:31.065  INFO 8288 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e4adbaba] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-26 17:55:31.138  INFO 8288 --- [           main] o.a.c.c.C.[.[localhost].[/visitor]       : Initializing Spring embedded WebApplicationContext
+2022-12-26 17:55:31.138  INFO 8288 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2489 ms
+2022-12-26 17:55:31.947  INFO 8288 --- [           main] com.zaxxer.hikari.HikariDataSource       : VISITORPOOL - Starting...
+2022-12-26 17:55:32.170  INFO 8288 --- [           main] com.zaxxer.hikari.HikariDataSource       : VISITORPOOL - Start completed.
+2022-12-26 17:55:32.270  INFO 8288 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2022-12-26 17:55:32.415  INFO 8288 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2022-12-26 17:55:32.419  INFO 8288 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2022-12-26 17:55:32.683  INFO 8288 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-12-26 17:55:32.980  INFO 8288 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-12-26 17:55:34.104  INFO 8288 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-26 17:55:34.869  WARN 8288 --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-26 17:55:34.999  INFO 8288 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-12-26 17:55:35.656  INFO 8288 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-12-26 17:55:35.691  INFO 8288 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-12-26 17:55:35.720  INFO 8288 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-12-26 17:55:35.925  INFO 8288 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllRoleUsingGET_1
+2022-12-26 17:55:35.985  INFO 8288 --- [           main] com.clss.visitor.ServletInitializer      : Started ServletInitializer in 7.972 seconds (JVM running for 13.984)
+2022-12-26 17:55:36.046  INFO 8288 --- [           main] org.apache.catalina.startup.Catalina     : Server startup in [13175] milliseconds
+2022-12-26 17:56:23.219  INFO 8288 --- [nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/visitor]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-26 17:56:23.219  INFO 8288 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-26 17:56:23.229  INFO 8288 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2022-12-26 17:56:23.405 ERROR 8288 --- [nio-8080-exec-1] o.s.b.w.servlet.support.ErrorPageFilter  : Forwarding to error page from request [/saveVisitorRequest] due to exception [HV000132: Void methods must not be constrained or marked for cascaded validation, but method VisitorRequestRequest#setVisitorMobile(String) is.]
+
+javax.validation.ConstraintDeclarationException: HV000132: Void methods must not be constrained or marked for cascaded validation, but method VisitorRequestRequest#setVisitorMobile(String) is.
+	at org.hibernate.validator.internal.metadata.aggregated.rule.VoidMethodsMustNotBeReturnValueConstrained.apply(VoidMethodsMustNotBeReturnValueConstrained.java:27) ~[hibernate-validator-6.0.14.Final.jar:6.0.14.Final]
+	at org.hibernate.validator.internal.metadata.aggregated.ExecutableMetaData$Builder.assertCorrectnessOfConfiguration(ExecutableMetaData.java:461) ~[hibernate-validator-6.0.14.Final.jar:6.0.14.Final]
+	at org.hibernate.validator.internal.metadata.aggregated.ExecutableMetaData$Builder.build(ExecutableMetaData.java:377) ~[hibernate-validator-6.0.14.Final.jar:6.0.14.Final]
+	at org.hibernate.validator.internal.metadata.aggregated.BeanMetaDataImpl$BuilderDelegate.build(BeanMetaDataImpl.java:788) ~[hibernate-validator-6.0.14.Final.jar:6.0.14.Final]
+	at org.hibernate.validator.internal.metadata.aggregated.BeanMetaDataImpl$BeanMetaDataBuilder.build(BeanMetaDataImpl.java:648) ~[hibernate-validator-6.0.14.Final.jar:6.0.14.Final]
+	at org.hibernate.validator.internal.metadata.BeanMetaDataManager.createBeanMetaData(BeanMetaDataManager.java:192) ~[hibernate-validator-6.0.14.Final.jar:6.0.14.Final]
+	at org.hibernate.validator.internal.metadata.BeanMetaDataManager.lambda$getBeanMetaData$0(BeanMetaDataManager.java:160) ~[hibernate-validator-6.0.14.Final.jar:6.0.14.Final]
+	at java.base/java.util.concurrent.ConcurrentMap.computeIfAbsent(ConcurrentMap.java:330) ~[na:na]
+	at org.hibernate.validator.internal.metadata.BeanMetaDataManager.getBeanMetaData(BeanMetaDataManager.java:159) ~[hibernate-validator-6.0.14.Final.jar:6.0.14.Final]
+	at org.hibernate.validator.internal.engine.ValidationContext$ValidationContextBuilder.forValidate(ValidationContext.java:566) ~[hibernate-validator-6.0.14.Final.jar:6.0.14.Final]
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validate(ValidatorImpl.java:155) ~[hibernate-validator-6.0.14.Final.jar:6.0.14.Final]
+	at org.springframework.validation.beanvalidation.SpringValidatorAdapter.validate(SpringValidatorAdapter.java:116) ~[spring-context-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.validation.DataBinder.validate(DataBinder.java:889) ~[spring-context-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.validateIfApplicable(AbstractMessageConverterMethodArgumentResolver.java:265) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:136) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:126) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:166) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) ~[servlet-api.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) ~[spring-webmvc-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) ~[servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[catalina.jar:9.0.67]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[catalina.jar:9.0.67]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-websocket.jar:9.0.67]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[catalina.jar:9.0.67]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[catalina.jar:9.0.67]
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90) ~[spring-boot-actuator-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[catalina.jar:9.0.67]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[catalina.jar:9.0.67]
+	at org.springframework.boot.web.servlet.support.ErrorPageFilter.doFilter(ErrorPageFilter.java:130) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.servlet.support.ErrorPageFilter.access$000(ErrorPageFilter.java:66) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.web.servlet.support.ErrorPageFilter$1.doFilterInternal(ErrorPageFilter.java:105) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.boot.web.servlet.support.ErrorPageFilter.doFilter(ErrorPageFilter.java:123) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[catalina.jar:9.0.67]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[catalina.jar:9.0.67]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:117) ~[spring-boot-actuator-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106) ~[spring-boot-actuator-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[catalina.jar:9.0.67]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[catalina.jar:9.0.67]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[catalina.jar:9.0.67]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[catalina.jar:9.0.67]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[catalina.jar:9.0.67]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[catalina.jar:9.0.67]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[catalina.jar:9.0.67]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[catalina.jar:9.0.67]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[catalina.jar:9.0.67]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) ~[catalina.jar:9.0.67]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[catalina.jar:9.0.67]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[catalina.jar:9.0.67]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-coyote.jar:9.0.67]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-coyote.jar:9.0.67]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) ~[tomcat-coyote.jar:9.0.67]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789) ~[tomcat-coyote.jar:9.0.67]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-coyote.jar:9.0.67]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-util.jar:9.0.67]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-util.jar:9.0.67]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-util.jar:9.0.67]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
