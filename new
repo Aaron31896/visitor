@@ -1,0 +1,30 @@
+
+	@RestController
+	public class VisitorRequestController {
+
+		@Autowired
+		private VisitorRequestRepository visitorRepo;
+		@PostMapping("/saveVisitorRequest")
+		public ResponseEntity<?> saveVisitorRequest(@RequestBody VisitorRequestRequest saveReq) {
+			try {
+				VisitorRequest user = new VisitorRequest();
+				user.setVisitorName(saveReq.getVisitorName());
+				user.setVisitorMobile(saveReq.getVisitorMobile());
+				user.setVisitorEmail(saveReq.getVisitorEmail());
+				user.setVisitorCompany(saveReq.getVisitorCompany());
+				user.setVisitingPurpose(saveReq.getVisitingPurpose());
+				user.setVisitingDate(saveReq.getVisitingDate());
+				user.setVisitFromTime(saveReq.getVisitFromTime());
+				user.setVisitToTime(saveReq.getVisitToTime());
+				user.setUserId(saveReq.getUserId());
+				user.setProof(saveReq.getProof());
+				user.setReferenceNo(saveReq.getReferenceNo());
+				user.setDob(saveReq.getDob());
+				user.setPhoto(saveReq.getPhoto());
+				user.setStatus(saveReq.getStatus());
+				return new ResponseEntity<>("Saved Successfully", HttpStatus.OK);
+
+			} catch (Exception exception) {
+				return new ResponseEntity<>(null, HttpStatus.BAD_REQUEST);
+			}
+		}
