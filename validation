@@ -6,10 +6,19 @@ public class VisitorRequestRequest {
 	
 	private int ticketId;
 	private int visitorId;
+	
+	@NotEmpty(message = "The Name is required.")
+	@NotNull(message = "The Name is required.")
 	private String visitorName;
+	
+	@Size(min = 10, max = 10, message = "Enter valid Mobile Number.")
+	@Pattern("/^([+]\d{2})?\d{10}$/")
 	private String visitorMobile;
-    private String visitorEmail;
-    private String visitorCompany;
+	
+	@Email(message = "Invalid Email Address")
+    	private String visitorEmail;
+	
+    	private String visitorCompany;
 	private String visitingPurpose;
 	private int  visitingDate;
 	private int visitFromTime;
