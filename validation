@@ -1,0 +1,129 @@
+package com.clss.visitor.payoad.request;
+
+
+
+public class VisitorRequestRequest {
+	
+	private int ticketId;
+	private int visitorId;
+	private String visitorName;
+	private String visitorMobile;
+    private String visitorEmail;
+    private String visitorCompany;
+	private String visitingPurpose;
+	private int  visitingDate;
+	private int visitFromTime;
+	private int visitToTime;
+	private int userId;
+	private String proof;
+	private int referenceNo;
+	private int dob;
+    private String photo;
+	private String status;
+	
+	public int getTicketId() {
+		return ticketId;
+	}
+	public void setTicketId(int ticketId) {
+		this.ticketId = ticketId;
+	}
+	public int getVisitorId() {
+		return visitorId;
+	}
+	public void setVisitorId(int visitorId) {
+		this.visitorId = visitorId;
+	}
+	public String getVisitorName() {
+		return visitorName;
+	}
+	public void setVisitorName(String visitorName) {
+		this.visitorName = visitorName;
+	}
+	public String getVisitorMobile() {
+		return visitorMobile;
+	}
+	public void setVisitorMobile(String visitorMobile) {
+		this.visitorMobile = visitorMobile;
+	}
+	public String getVisitorEmail() {
+		return visitorEmail;
+	}
+	public void setVisitorEmail(String visitorEmail) {
+		this.visitorEmail = visitorEmail;
+	}
+	
+	
+	public String getVisitorCompany() {
+		return visitorCompany;
+	}
+	public void setVisitorCompany(String visitorCompany) {
+		this.visitorCompany = visitorCompany;
+	}
+	public String getVisitingPurpose() {
+		return visitingPurpose;
+	}
+	public void setVisitingPurpose(String visitingPurpose) {
+		this.visitingPurpose = visitingPurpose;
+	}
+	
+	
+	public int getVisitingDate() {
+		return visitingDate;
+	}
+	public void setVisitingDate(int visitingDate) {
+		this.visitingDate = visitingDate;
+	}
+	public int getVisitFromTime() {
+		return visitFromTime;
+	}
+	public void setVisitFromTime(int visitFromTime) {
+		this.visitFromTime = visitFromTime;
+	}
+	public int getVisitToTime() {
+		return visitToTime;
+	}
+	public void setVisitToTime(int visitToTime) {
+		this.visitToTime = visitToTime;
+	}
+	public int getUserId() {
+		return userId;
+	}
+	public void setUserId(int userId) {
+		this.userId = userId;
+	}
+	public String getProof() {
+		return proof;
+	}
+	public void setProof(String proof) {
+		this.proof = proof;
+	}
+	public int getReferenceNo() {
+		return referenceNo;
+	}
+	public void setReferenceNo(int referenceNo) {
+		this.referenceNo = referenceNo;
+	}
+	public int getDob() {
+		return dob;
+	}
+	public void setDob(int dob) {
+		this.dob = dob;
+	}
+	public String getPhoto() {
+		return photo;
+	}
+	public void setPhoto(String photo) {
+		this.photo = photo;
+	}
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}
+	
+	
+	
+
+
+}
