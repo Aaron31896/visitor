@@ -30,3 +30,55 @@
 		}
 
 https://medium.com/@tericcabrel/validate-request-body-and-parameter-in-spring-boot-53ca77f97fe9
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	@RestController
+	public class VisitorRequestController {
+
+		@Autowired
+		private VisitorRequestRepository visitorRepo;
+		@PostMapping("/saveVisitorRequest")
+		public ResponseEntity<?> saveVisitorRequest(@RequestBody VisitorRequestRequest saveReq) {
+			ResponseModel  model=new ResponseModel();
+			try {
+				if (null != saveReq.getVisitorName() || "".equals(saveReq.getVisitorName())) {
+					model.setFlag(false);
+					model.setMessage("Please check the Visitor Name");
+				}else {
+				
+				VisitorRequest user = new VisitorRequest();
+				user.setVisitorName(saveReq.getVisitorName());
+				user.setVisitorMobile(saveReq.getVisitorMobile());
+				user.setVisitorEmail(saveReq.getVisitorEmail());
+				user.setVisitorCompany(saveReq.getVisitorCompany());
+				user.setVisitingPurpose(saveReq.getVisitingPurpose());
+				user.setVisitingDate(saveReq.getVisitingDate());
+				user.setVisitFromTime(saveReq.getVisitFromTime());
+				user.setVisitToTime(saveReq.getVisitToTime());
+				user.setUserId(saveReq.getUserId());
+				user.setProof(saveReq.getProof());
+				user.setReferenceNo(saveReq.getReferenceNo());
+				user.setDob(saveReq.getDob());
+				user.setPhoto(saveReq.getPhoto());
+				user.setStatus(saveReq.getStatus());
+				}
+				return new ResponseEntity<ResponseModel>(model, HttpStatus.OK);
+			} catch (Exception exception) {
+				return new ResponseEntity<ResponseModel>(model, HttpStatus.BAD_REQUEST);
+			}
+		}
